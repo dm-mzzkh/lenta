@@ -1,0 +1,38 @@
+{
+  "skus": [
+    {
+      "code": "152153",
+      "title": "Молоко 3.2% 1л",
+      "brand": "Простоквашино",
+      "subTitle": "Россия",
+      "regularPrice": 671.49,
+      "discountPrice": 637.89,
+      "promoType": "PromoByCard",
+      "promoId": "ADEH143P39|2023",
+      "image": {"thumbnail": "https://lenta.gcdn.co/t.jpg", "medium": "https://lenta.gcdn.co/m.jpg"},
+      "isWeightProduct": false,
+      "stock": "Many",
+      "webUrl": "https://lenta.com/product/milk-1l/"
+    },
+    {
+      "code": "987654",
+      "title": "Хлеб бородинский",
+      "brand": "Хлебный Дом",
+      "subTitle": "Россия",
+      "regularPrice": 89.0,
+      "discountPrice": null,
+      "promoType": "None",
+      "image": {"thumbnail": "https://lenta.gcdn.co/bread.jpg"},
+      "isWeightProduct": false,
+      "stock": "Few",
+      "webUrl": "https://lenta.com/product/bread/"
+    }
+  ],
+  "nodes": [],
+  "pages": [],
+  "siteSections": [],
+  "searchSuggestions": [],
+  "tagSuggestions": [],
+  "skusCount": 2,
+  "pagesCount": 0
+}

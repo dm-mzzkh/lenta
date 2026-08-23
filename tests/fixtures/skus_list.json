@@ -1,0 +1,40 @@
+{
+  "skus": [
+    {
+      "code": "152153",
+      "title": "Молоко 3.2% 1л",
+      "brand": "Простоквашино",
+      "subTitle": "Россия",
+      "description": "Питьевое пастеризованное молоко.",
+      "regularPrice": 671.49,
+      "discountPrice": 637.89,
+      "promoType": "PromoByCard",
+      "promoId": "ADEH143P39|2023",
+      "validityStartDate": "2024-06-13T02:00:00Z",
+      "validityEndDate": "2024-07-11T02:00:00Z",
+      "image": {
+        "thumbnail": "https://lenta.gcdn.co/t.jpg",
+        "medium": "https://lenta.gcdn.co/m.jpg",
+        "fullSize": "https://lenta.gcdn.co/f.jpg",
+        "mediumLossy": "https://lenta.gcdn.co/ml.jpg"
+      },
+      "images": [],
+      "skuWeight": 0.0,
+      "isWeightProduct": false,
+      "stock": "Many",
+      "orderLimit": 2,
+      "orderSteps": [1.0],
+      "categories": {
+        "group": {"name": "Продукты", "nodeCode": "a1b2c3"},
+        "category": {"name": "Молоко", "nodeCode": "d4e5f6"},
+        "subcategory": null
+      },
+      "averageRating": 3.9,
+      "commentsCount": 1349,
+      "webUrl": "https://lenta.com/product/milk-1l/"
+    }
+  ],
+  "total": 27735,
+  "isFiltersAvailable": false,
+  "tagCategories": []
+}

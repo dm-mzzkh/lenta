@@ -1,0 +1,440 @@
+{
+  "attributes": [
+    {
+      "alias": "brand",
+      "id": 238,
+      "name": "Бренд",
+      "slug": "brand",
+      "value": "MAKFA",
+      "valueId": 10983626,
+      "valueSlug": "makfa"
+    },
+    {
+      "alias": "",
+      "id": 348,
+      "name": "Форма выпуска Бакалея",
+      "slug": "forma-vypuska-bakaleya",
+      "value": "Порошок",
+      "valueId": 1506098798,
+      "valueSlug": "poroshok"
+    },
+    {
+      "alias": "",
+      "id": 84,
+      "name": "Полное название товара (у поставщика)",
+      "slug": "polnoe-nazvanie-tovara-u-postavshchika",
+      "value": "Мука пшеничная MAKFA хлебопекарная высший сорт, 2кг",
+      "valueId": 7681786,
+      "valueSlug": "muka-pshenichnaya-makfa-hlebopekarnaya-vysshijj-sort-2kg"
+    },
+    {
+      "alias": "",
+      "id": 319,
+      "name": "Назначение",
+      "slug": "naznachenie",
+      "value": "Для приготовления теста, для приготовления блюд",
+      "valueId": 1496565195,
+      "valueSlug": "dlya-prigotovleniya-testa-dlya-prigotovleniya-blyud"
+    },
+    {
+      "alias": "nutritionalValue",
+      "id": 234,
+      "name": "Пищевая ценность",
+      "slug": "pishchevaya-cennost",
+      "value": "Белки – 12г, жиры – 1,1г, углеводы – 70,6г",
+      "valueId": 295534515,
+      "valueSlug": "belki--12g-zhiry--11g-uglevody--706g"
+    },
+    {
+      "alias": "",
+      "id": 233,
+      "name": "Энергетическая ценность",
+      "slug": "energeticheskaya-cennost",
+      "value": "340 кКал/1424 кДж",
+      "valueId": 295465777,
+      "valueSlug": "340-kkal1424-kdzh"
+    },
+    {
+      "alias": "",
+      "id": 17,
+      "name": "Вид бакалейного изделия",
+      "slug": "vid-bakalejjnogo-izdeliya",
+      "value": "Пшеничный",
+      "valueId": 6747459,
+      "valueSlug": "pshenichnyjj"
+    },
+    {
+      "alias": "",
+      "id": 115,
+      "name": "Производитель",
+      "slug": "proizvoditel",
+      "value": "АО «МАКФА»",
+      "valueId": 6819442,
+      "valueSlug": "ao-makfa"
+    },
+    {
+      "alias": "",
+      "id": 123,
+      "name": "Как приготовить - советы производителя",
+      "slug": "kak-prigotovit---sovety-proizvoditelya",
+      "value": "Добавлять при приготовлении теста или других блюд согласно рецепта.",
+      "valueId": 7303547,
+      "valueSlug": "dobavlyat-pri-prigotovlenii-testa-ili-drugih-blyud-soglasno-recepta"
+    },
+    {
+      "alias": "",
+      "id": 164,
+      "name": "Готово к употреблению",
+      "slug": "gotovo-k-upotrebleniyu",
+      "value": "Нет",
+      "valueId": 6751541,
+      "valueSlug": "net"
+    },
+    {
+      "alias": "",
+      "id": 180,
+      "name": "Стандарт качества",
+      "slug": "standart-kachestva",
+      "value": "ГОСТ",
+      "valueId": 6747604,
+      "valueSlug": "gost"
+    },
+    {
+      "alias": "",
+      "id": 185,
+      "name": "Условия хранения",
+      "slug": "usloviya-hraneniya",
+      "value": "В сухих, хорошо вентилируемых, не зараженных вредителями хлебных запасов помещениях, с соблюдением санитарных правил, при температуре не выше +25 и относительной влажности воздуха не выше 70%.",
+      "valueId": 7681776,
+      "valueSlug": "v-suhih-horosho-ventiliruemyh-ne-zarazhennyh-vreditelyami-hlebnyh-zapasov-pomeshcheniyah-s-soblyudeniem-sanitarnyh-pravil-pri-temperature-ne-vyshe-25-i-otnositelnojj-vlazhnosti-vozduha-ne-vyshe-70"
+    },
+    {
+      "alias": "",
+      "id": 212,
+      "name": "Вид упаковки",
+      "slug": "vid-upakovki",
+      "value": "Бумажный пакет",
+      "valueId": 6757257,
+      "valueSlug": "bumazhnyjj-paket"
+    },
+    {
+      "alias": "",
+      "id": 217,
+      "name": "Тип продукта",
+      "slug": "tip-produkta",
+      "value": "Мука",
+      "valueId": 6764095,
+      "valueSlug": "muka"
+    },
+    {
+      "alias": "",
+      "id": 221,
+      "name": "Сорт",
+      "slug": "sort",
+      "value": "Высший",
+      "valueId": 6751545,
+      "valueSlug": "vysshijj"
+    },
+    {
+      "alias": "ingredients",
+      "id": 232,
+      "name": "Состав",
+      "slug": "sostav",
+      "value": "Мука пшеничная хлебопекарная высшего сорта.",
+      "valueId": 295491858,
+      "valueSlug": "muka-pshenichnaya-hlebopekarnaya-vysshego-sorta"
+    },
+    {
+      "alias": "",
+      "id": 235,
+      "name": "Страна",
+      "slug": "strana",
+      "value": "Россия",
+      "valueId": 10720646,
+      "valueSlug": "rossiya"
+    },
+    {
+      "alias": "vendorId",
+      "id": 236,
+      "name": "Артикул",
+      "slug": "artikul",
+      "value": "073015",
+      "valueId": 13424172,
+      "valueSlug": "073015"
+    },
+    {
+      "alias": "description",
+      "id": 242,
+      "name": "Описание",
+      "slug": "opisanie",
+      "value": "Для муки пшеничной MAKFA хлебопекарной высшего сорта зерно перемалывается в муку с величиной частицы в 112 микрон – примерно 1/10 часть миллиметра. Такой помол дает высококачественный продукт, а размер частичек имеет большое значение для формирования качества будущего хлеба. Мука высшего сорта — самая нежная и воздушная. Она подходит практически для всех видов мучных изделий: хлеба, булочек, кексов, бисквитов, изготовления теста для пиццы, пирогов и пирожков, пельменей и вареников. Ее можно использовать и как загуститель для соусов. Из муки MAKFA получается отличная выпечка.",
+      "valueId": 13424181,
+      "valueSlug": "dlya-muki-pshenichnojj-makfa-hlebopekarnojj-vysshego-sorta-zerno-peremalyvaetsya-v-muku-s-velichinojj-chasticy-v-112-mikron--primerno-110-chast-millimetra-takojj-pomol-daet-vysokokachestvennyjj-produkt-a-razmer-chastichek-imeet-bolshoe-znachenie-dlya-formirovaniya-kachestva-budushchego-hleba-muka-vysshego-sorta--samaya-nezhnaya-i-vozdushnaya-ona-podhodit-prakticheski-dlya-vseh-vidov-muchnyh-izdelijj-hleba-bulochek-keksov-biskvitov-izgotovleniya-testa-dlya-piccy-pirogov-i-pirozhkov-pelmenejj-i-varenikov-ee-mozhno-ispolzovat-i-kak-zagustitel-dlya-sousov-iz-muki-makfa-poluchaetsya-otlichnaya-vypechka"
+    }
+  ],
+  "badges": {
+    "discount": [
+      {
+        "backgroundColor": "#ef4544",
+        "title": "-25%",
+        "tooltip": {
+          "description": ""
+        }
+      }
+    ],
+    "image": []
+  },
+  "categories": [
+    {
+      "badges": [],
+      "hasChildren": true,
+      "iconUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000025/icon-app/9424c36c-640c-40cf-be91-e1019a093213.png",
+      "id": 25,
+      "imageUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000025/image/05119b0b-5ada-4f00-9b5c-6566cf7e7823.png",
+      "imageWebUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000025/image-web/0f51a415-cef5-458d-9705-1a220e166513.png",
+      "isAdult": false,
+      "isMain": true,
+      "level": 1,
+      "name": "Макароны, крупы, мука",
+      "parentId": 0,
+      "parentName": "",
+      "slug": "makarony-krupy-muka",
+      "ui": {
+        "alignment": "",
+        "backgroundColor": "",
+        "fontColor": "",
+        "openMode": "",
+        "showType": ""
+      }
+    },
+    {
+      "badges": [],
+      "hasChildren": true,
+      "iconUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000033/icon-app/1661e5de-0a2a-4d27-9539-a737a9fa7184.png",
+      "id": 33,
+      "imageUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000033/image/f1d9249e-5524-4532-9a61-1a948b2d803f.png",
+      "imageWebUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/200000033/image-web/00fd7c8e-82a3-4168-8dee-4d953bd2dca5.png",
+      "isAdult": false,
+      "isMain": true,
+      "level": 2,
+      "name": "Мука, смеси для выпечки",
+      "parentId": 25,
+      "parentName": "Макароны, крупы, мука",
+      "slug": "muka-smesi-dlya-vypechki",
+      "ui": {
+        "alignment": "",
+        "backgroundColor": "",
+        "fontColor": "",
+        "openMode": "",
+        "showType": ""
+      }
+    },
+    {
+      "badges": [],
+      "hasChildren": false,
+      "iconUrl": "",
+      "id": 750,
+      "imageUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/750/image/2072d00de3bb0a72.jpg",
+      "imageWebUrl": "https://cdn.api.lenta.com/resample/0x0/category_images_v2/750/image_web/20307e36e07bdc7a.png",
+      "isAdult": false,
+      "isMain": true,
+      "level": 3,
+      "name": "Мука",
+      "parentId": 33,
+      "parentName": "Мука, смеси для выпечки",
+      "slug": "muka",
+      "ui": {
+        "alignment": "",
+        "backgroundColor": "",
+        "fontColor": "",
+        "openMode": "",
+        "showType": ""
+      }
+    }
+  ],
+  "certificates": [],
+  "chipsPrices": [],
+  "count": 100,
+  "dimensions": {
+    "height": 220,
+    "length": 135,
+    "width": 95
+  },
+  "display": {
+    "name": "Мука пшеничная MAKFA хлебопекарная высший сорт",
+    "package": "2 кг"
+  },
+  "features": {
+    "isAdult": false,
+    "isAlcohol": false,
+    "isBlockedForSale": false,
+    "isFavorite": false,
+    "isFd": false,
+    "isIndividualAcc": false,
+    "isMarkType": false,
+    "isMercurial": false,
+    "isOnlyPickup": false,
+    "isPartner": false,
+    "isPersonalPrice": false,
+    "isPinned": false,
+    "isPromo": false,
+    "isPurchased": true,
+    "isQuantityDiscount": false,
+    "isReviewable": false,
+    "isSizeChartVisible": false,
+    "isTobacco": false,
+    "isWeight": false,
+    "markType": ""
+  },
+  "id": 73015,
+  "images": [
+    {
+      "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73015/76ddf64b-5200-4809-b470-4c60c132f8aa.png",
+      "id": 73015,
+      "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73015/76ddf64b-5200-4809-b470-4c60c132f8aa.png",
+      "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73015/76ddf64b-5200-4809-b470-4c60c132f8aa.png",
+      "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73015/76ddf64b-5200-4809-b470-4c60c132f8aa.png",
+      "position": 1,
+      "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73015/76ddf64b-5200-4809-b470-4c60c132f8aa.png"
+    },
+    {
+      "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73015/b5a1e0b2-e66d-4ac6-9680-4284879122e5.png",
+      "id": 73015,
+      "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73015/b5a1e0b2-e66d-4ac6-9680-4284879122e5.png",
+      "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73015/b5a1e0b2-e66d-4ac6-9680-4284879122e5.png",
+      "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73015/b5a1e0b2-e66d-4ac6-9680-4284879122e5.png",
+      "position": 2,
+      "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73015/b5a1e0b2-e66d-4ac6-9680-4284879122e5.png"
+    },
+    {
+      "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73015/6c38a165-1ccf-4f25-8c52-4fea28781949.png",
+      "id": 73015,
+      "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73015/6c38a165-1ccf-4f25-8c52-4fea28781949.png",
+      "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73015/6c38a165-1ccf-4f25-8c52-4fea28781949.png",
+      "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73015/6c38a165-1ccf-4f25-8c52-4fea28781949.png",
+      "position": 3,
+      "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73015/6c38a165-1ccf-4f25-8c52-4fea28781949.png"
+    }
+  ],
+  "multicard": {
+    "attributes": [],
+    "id": 0
+  },
+  "name": "Мука пшеничная MAKFA хлебопекарная высший сорт, 2кг",
+  "navigation": [
+    {
+      "rack": "28",
+      "row": "39"
+    }
+  ],
+  "personalization": {
+    "modelType": "",
+    "ruleId": ""
+  },
+  "prices": {
+    "cost": 12499,
+    "costRegular": 16849,
+    "isLoyaltyCardPrice": true,
+    "isPromoactionPrice": true,
+    "isQuantPrice": false,
+    "price": 12499,
+    "priceRegular": 16849
+  },
+  "quantityDiscount": [],
+  "quantityDiscountPromo": [],
+  "rating": {
+    "rate": 5,
+    "votes": 3351
+  },
+  "reviews": [
+    {
+      "createdAt": "2026-08-19T11:28:31.178105Z",
+      "downvote": 0,
+      "id": 12305122,
+      "isPinned": false,
+      "isReviewOwner": false,
+      "parentId": 0,
+      "rating": 5,
+      "text": "Мука отличная!",
+      "upvote": 0,
+      "userName": "",
+      "userPic": "",
+      "userRating": 0
+    },
+    {
+      "createdAt": "2026-08-19T10:54:08.230138Z",
+      "downvote": 0,
+      "id": 12304435,
+      "isPinned": false,
+      "isReviewOwner": false,
+      "parentId": 0,
+      "rating": 5,
+      "text": "мука нравится. ",
+      "upvote": 0,
+      "userName": "",
+      "userPic": "",
+      "userRating": 0
+    },
+    {
+      "createdAt": "2026-08-18T12:35:17.477729Z",
+      "downvote": 0,
+      "id": 12290911,
+      "isPinned": false,
+      "isReviewOwner": false,
+      "parentId": 0,
+      "rating": 5,
+      "text": "лучшая мука,другую не использую.",
+      "upvote": 0,
+      "userName": "",
+      "userPic": "",
+      "userRating": 0
+    },
+    {
+      "createdAt": "2026-08-17T15:34:26.124369Z",
+      "downvote": 0,
+      "id": 12277669,
+      "isPinned": false,
+      "isReviewOwner": false,
+      "parentId": 0,
+      "rating": 5,
+      "text": "отличная для выпечки",
+      "upvote": 0,
+      "userName": "",
+      "userPic": "",
+      "userRating": 0
+    },
+    {
+      "createdAt": "2026-08-17T12:58:39.082103Z",
+      "downvote": 0,
+      "id": 12275100,
+      "isPinned": false,
+      "isReviewOwner": false,
+      "parentId": 0,
+      "rating": 5,
+      "text": "другую муку даже не смотрю, только эта!",
+      "upvote": 0,
+      "userName": "",
+      "userPic": "",
+      "userRating": 0
+    }
+  ],
+  "saleLimit": {
+    "foldQuantity": 1,
+    "maxSaleQuantity": 100,
+    "minSaleQuantity": 1
+  },
+  "slug": "muka-vs-rossiya-2kg",
+  "storeId": 267,
+  "units": {
+    "itemUnit": "шт",
+    "itemUnitQuantity": 1,
+    "saleUnit": "шт",
+    "saleUnitQuantity": 1
+  },
+  "videos": [],
+  "weight": {
+    "gross": 2014,
+    "net": 0,
+    "package": "2кг"
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>lenta-proxy</title>
+<style>
+*{box-sizing:border-box;margin:0;font:14px/1.4 sans-serif}
+body{padding:20px;background:#f5f5f5;max-width:1100px;margin:0 auto}
+h1{font-size:20px;margin-bottom:12px}
+section{background:#fff;border-radius:8px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+label{display:block;margin-top:8px;font-weight:600}
+input,textarea{width:100%;padding:6px 10px;margin-top:4px;border:1px solid #ccc;border-radius:4px;font-family:monospace}
+textarea{height:80px}
+button{padding:6px 14px;border:1px solid #888;border-radius:4px;cursor:pointer;background:#fafafa}
+button:active{background:#ddd}
+button:disabled{opacity:.5;cursor:default}
+pre{background:#1e1e1e;color:#d4d4d4;padding:12px;border-radius:4px;overflow:auto;font-size:12px;max-height:300px;margin-top:8px}
+.badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px}
+.badge-ok{background:#d4edda;color:#155724}
+.badge-err{background:#f8d7da;color:#721c24}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.err{color:#721c24}
+
+/* search results / cart as product cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:12px}
+.card{border:1px solid #ddd;border-radius:6px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.card img{width:100%;height:120px;object-fit:contain}
+.card .name{font-size:13px;min-height:36px}
+.card .price{font-weight:700}
+.card .old{color:#888;text-decoration:line-through;font-size:12px;margin-left:6px}
+.card .stock0{color:#b00;font-weight:700;font-size:12px}
+.card .stock{color:#155724;font-size:12px}
+.card .qty-row{display:flex;align-items:center;gap:6px;margin-top:auto}
+.card .qty-row button{min-width:30px;padding:4px 8px}
+.card .qty-row input{width:54px;text-align:center;margin:0;padding:4px}
+.hist{margin-top:8px;font-size:12px;background:#f9f9f9;border-radius:4px;padding:6px}
+.hist table{width:100%;border-collapse:collapse}
+.hist td{padding:1px 4px;border-bottom:1px solid #eee}
+.total{font-size:16px;font-weight:700;margin-top:12px}
+.minmax{font-size:12px;color:#555;margin-top:4px}
+#search-header{display:flex;gap:8px}
+#search-q{flex:1;margin:0}
+#cart-summary{margin-top:8px}
+</style>
+
+<h1>lenta-proxy <span id="auth-badge"></span></h1>
+
+<section id="auth-section">
+  <div><b>Authorization</b></div>
+  <label>phone <input id="phone" value="79066399816"></label>
+  <label>cookies (JSON) <textarea id="cookies-input">{
+  "App_Cache_MPK": "",
+  "PassportAccessToken": "",
+  "Utk_SessionToken": "",
+  "qrator_jsid": "",
+  "App_Cache_CitySlug": "spb"
+}</textarea></label>
+  <div class="row"><button onclick="login()">Login</button><button onclick="status()">Status</button></div>
+</section>
+
+<section>
+  <b>Search</b>
+  <div class="row" style="margin-top:8px" id="search-header">
+    <input id="search-q" value="круассан">
+    <button onclick="doSearch()">Search</button>
+  </div>
+  <div id="search-results" class="cards"></div>
+</section>
+
+<section>
+  <b>Cart</b> <span id="cart-summary"></span>
+  <div id="cart-items" class="cards"></div>
+  <div id="cart-error" class="err"></div>
+</section>
+
+<pre id="output">Login → Status → Search</pre>
+
+<script>
+const BASE = 'http://localhost:8000';
+const out = document.getElementById('output');
+const badge = document.getElementById('auth-badge');
+
+function log(data) {
+  out.textContent = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+}
+
+function badgeState(state) {
+  badge.textContent = state || '';
+  badge.className = 'badge ' + (state === 'logged_in' ? 'badge-ok' : 'badge-err');
+}
+
+function rub(v) { return v == null ? '—' : v.toFixed(2) + ' ₽'; }
+
+async function api(method, url, body) {
+  const r = await fetch(BASE + url, {
+    method,
+    headers: body ? {'content-type': 'application/json'} : undefined,
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const text = await r.text();
+  let data;
+  try { data = JSON.parse(text) } catch { data = text }
+  return { status: r.status, ok: r.ok, data };
+}
+
+async function login() {
+  let cookies;
+  try { cookies = JSON.parse(document.getElementById('cookies-input').value) }
+  catch { return log('Error: cookies must be valid JSON') }
+  const r = await api('POST', '/api/auth/login', {
+    phone: document.getElementById('phone').value, cookies,
+  });
+  log(r.data);
+  if (r.ok) { badgeState('logged_in'); loadCart(); }
+}
+
+async function status() {
+  const r = await api('GET', '/api/auth/status');
+  log(r.data);
+  if (r.data?.state) badgeState(r.data.state);
+}
+
+// ---------- search ----------
+
+function cardEl(it) {
+  const el = document.createElement('div');
+  el.className = 'card';
+  const img = it.image?.thumbnail || it.image?.medium || '';
+  const price = it.discountPrice ?? it.regularPrice;
+  let priceHtml = `<div class="price">${rub(price)}`;
+  if (it.discountPrice != null) priceHtml += `<span class="old">${rub(it.regularPrice)}</span>`;
+  priceHtml += '</div>';
+  const stock = it.stock;
+  let stockHtml = '';
+  if (stock === '0') stockHtml = '<div class="stock0">НЕТ В НАЛИЧИИ</div>';
+  else if (stock) stockHtml = `<div class="stock">ост. ${stock}</div>`;
+  el.innerHTML = `
+    <img src="${img}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+    <div class="name">${it.title}<br><small>${it.subTitle || ''}</small></div>
+    ${priceHtml}${stockHtml}
+    <div class="qty-row">
+      <button onclick="cartAdd('${it.code}')">+</button>
+      <input id="qty-${it.code}" value="1">
+    </div>
+    <button onclick="showHistory('${it.code}', this.closest('.card'))">История цен</button>`;
+  return el;
+}
+
+async function doSearch() {
+  const q = document.getElementById('search-q').value;
+  const r = await api('GET', '/api/search?q=' + encodeURIComponent(q) + '&size=24');
+  if (!r.ok) return log({error: r.status, data: r.data});
+  const box = document.getElementById('search-results');
+  box.innerHTML = '';
+  (r.data.items || []).forEach(it => box.appendChild(cardEl(it)));
+  if (!r.data.items?.length) box.innerHTML = '<i>ничего не найдено</i>';
+}
+
+// ---------- cart ----------
+
+function cartCardEl(it) {
+  const el = document.createElement('div');
+  el.className = 'card';
+  const dead = it.InStockCount === 0;
+  el.innerHTML = `
+    <img src="${it.ImageSmallUrl || ''}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+    <div class="name">${it.Name}</div>
+    <div class="price">${rub(it.PriceTotal)}</div>
+    ${dead ? '<div class="stock0">НЕТ В НАЛИЧИИ</div>'
+           : `<div class="stock">ост. ${it.InStockCount}</div>`}
+    <div class="qty-row">
+      <button onclick="cartQty('${it.GoodsItemId}', ${it.Quantity - 1})">−</button>
+      <input value="${it.Quantity}" readonly>
+      <button onclick="cartQty('${it.GoodsItemId}', ${it.Quantity + 1})">+</button>
+      <button onclick="cartRemove('${it.GoodsItemId}')">✕</button>
+    </div>`;
+  return el;
+}
+
+function renderCart(d) {
+  const box = document.getElementById('cart-items');
+  const summ = document.getElementById('cart-summary');
+  const err = document.getElementById('cart-error');
+  err.textContent = '';
+  box.innerHTML = '';
+  if (!d.items?.length) { summ.textContent = '— пусто'; return; }
+  summ.textContent = `— ${d.PositionsCount} поз., ${rub(d.TotalCost)}` +
+    (d.BaseTotalCost > d.TotalCost ? ` (без скидки ${rub(d.BaseTotalCost)})` : '');
+  d.items.forEach(it => {
+    if (it.InStockCount === 0) err.textContent +=
+      `«${it.Name}» нет в наличии — Лента обнулит позицию. `;
+    box.appendChild(cartCardEl(it));
+  });
+}
+
+async function loadCart() {
+  const r = await api('GET', '/api/cart');
+  if (!r.ok) { badgeState(r.data?.state || ''); return log({error: r.status, data: r.data}); }
+  renderCart(r.data);
+}
+
+async function cartAdd(sku) {
+  const qty = parseFloat(document.getElementById('qty-' + sku)?.value) || 1;
+  const r = await api('POST', '/api/cart/items', {sku_code: sku, quantity: qty});
+  if (!r.ok) return log({error: r.status, data: r.data});
+  renderCart(r.data);
+}
+
+async function cartQty(sku, qty) {
+  if (qty <= 0) return cartRemove(sku);
+  const r = await api('PUT', '/api/cart/items/' + sku, {quantity: qty});
+  if (!r.ok) return log({error: r.status, data: r.data});
+  renderCart(r.data);
+}
+
+async function cartRemove(sku) {
+  const r = await api('DELETE', '/api/cart/items/' + sku);
+  if (!r.ok) return log({error: r.status, data: r.data});
+  renderCart(r.data);
+}
+
+// ---------- price history (reads the observation db) ----------
+
+const FIELD_RU = {price: 'цена', discount: 'скидка', stock: 'остаток', title: 'название', brand: 'бренд', rating: 'рейтинг'};
+
+async function showHistory(sku, card) {
+  let el = document.getElementById('hist-' + sku);
+  if (el) { el.remove(); return; }
+  el = document.createElement('div');
+  el.className = 'hist';
+  el.id = 'hist-' + sku;
+  let html = '';
+  const r = await api('GET', '/api/db/history/' + sku);
+  if (r.ok) {
+    const d = r.data;
+    html = `<b>${d.title || sku}</b> — сейчас ${rub(d.price / 100)}` +
+      (d.discount ? `, по скидке ${rub(d.discount / 100)}` : '') + '<table>';
+    (d.changes || []).slice(0, 10).forEach(c => {
+      const when = new Date(c.ts * 1000).toLocaleString('ru-RU', {month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'});
+      html += `<tr><td>${when}</td><td>${FIELD_RU[c.field] || c.field}</td><td>${c.old ?? '—'} → ${c.new ?? '—'}</td></tr>`;
+    });
+    html += '</table>';
+    if (d.min_price != null) html += `<div class="minmax">мин/макс: ${rub(d.min_price / 100)} / ${rub(d.max_price / 100)}</div>`;
+  } else {
+    html = 'нет данных';
+  }
+  el.innerHTML = html;
+  card.appendChild(el);
+}
+
+status().then(() => loadCart());
+</script>
+</html>

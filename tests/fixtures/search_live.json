@@ -1,0 +1,373 @@
+{
+  "items": [
+    {
+      "badges": {
+        "discount": [
+          {
+            "backgroundColor": "#ef4544",
+            "title": "-21%",
+            "tooltip": {
+              "description": ""
+            }
+          }
+        ],
+        "image": []
+      },
+      "chipsPrices": [],
+      "count": 3,
+      "dimensions": {
+        "height": 150,
+        "length": 100,
+        "width": 70
+      },
+      "display": {
+        "name": "Мука пшеничная MAKFA хлебопекарная высший сорт",
+        "package": "1 кг"
+      },
+      "features": {
+        "isAdult": false,
+        "isAlcohol": false,
+        "isBlockedForSale": false,
+        "isFavorite": false,
+        "isFd": false,
+        "isIndividualAcc": false,
+        "isMarkType": false,
+        "isMercurial": false,
+        "isOnlyPickup": false,
+        "isPartner": false,
+        "isPersonalPrice": false,
+        "isPinned": false,
+        "isPromo": false,
+        "isPurchased": false,
+        "isQuantityDiscount": false,
+        "isReviewable": false,
+        "isSizeChartVisible": false,
+        "isTobacco": false,
+        "isWeight": false,
+        "markType": ""
+      },
+      "id": 73012,
+      "images": [
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73012/9285c68f-849d-4356-a803-4a116ccbb6c5.png",
+          "id": 73012,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73012/9285c68f-849d-4356-a803-4a116ccbb6c5.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73012/9285c68f-849d-4356-a803-4a116ccbb6c5.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73012/9285c68f-849d-4356-a803-4a116ccbb6c5.png",
+          "position": 1,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73012/9285c68f-849d-4356-a803-4a116ccbb6c5.png"
+        },
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73012/55e8872a-2026-4b58-b414-56e45cd34d4c.png",
+          "id": 73012,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73012/55e8872a-2026-4b58-b414-56e45cd34d4c.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73012/55e8872a-2026-4b58-b414-56e45cd34d4c.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73012/55e8872a-2026-4b58-b414-56e45cd34d4c.png",
+          "position": 2,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73012/55e8872a-2026-4b58-b414-56e45cd34d4c.png"
+        },
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/73012/94a514d8-9ea9-441f-95fd-ed2c3deb4a92.png",
+          "id": 73012,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/73012/94a514d8-9ea9-441f-95fd-ed2c3deb4a92.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/73012/94a514d8-9ea9-441f-95fd-ed2c3deb4a92.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/73012/94a514d8-9ea9-441f-95fd-ed2c3deb4a92.png",
+          "position": 3,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/73012/94a514d8-9ea9-441f-95fd-ed2c3deb4a92.png"
+        }
+      ],
+      "name": "Мука пшеничная MAKFA хлебопекарная высший сорт, 1кг",
+      "personalization": {
+        "modelType": "",
+        "ruleId": ""
+      },
+      "prices": {
+        "cost": 6299,
+        "costRegular": 7999,
+        "isLoyaltyCardPrice": true,
+        "isPromoactionPrice": true,
+        "isQuantPrice": false,
+        "price": 6299,
+        "priceRegular": 7999
+      },
+      "quantityDiscount": [],
+      "quantityDiscountPromo": [],
+      "rating": {
+        "rate": 5,
+        "votes": 1271
+      },
+      "saleLimit": {
+        "foldQuantity": 1,
+        "maxSaleQuantity": 3,
+        "minSaleQuantity": 1
+      },
+      "slug": "muka-vs-rossiya-1kg",
+      "storeId": 267,
+      "units": {
+        "itemUnit": "шт",
+        "itemUnitQuantity": 1,
+        "saleUnit": "шт",
+        "saleUnitQuantity": 1
+      },
+      "videos": [],
+      "weight": {
+        "gross": 1010,
+        "net": 0,
+        "package": "1кг"
+      }
+    },
+    {
+      "badges": {
+        "discount": [
+          {
+            "backgroundColor": "#ef4544",
+            "title": "-19%",
+            "tooltip": {
+              "description": ""
+            }
+          }
+        ],
+        "image": [
+          {
+            "backgroundColor": "#004cff",
+            "deeplink": "lentochka://action/detail/1308",
+            "id": 1328,
+            "modal": {
+              "button_title": "Все товары",
+              "text": "Дополнительная скидка 10% по социальной карте для всех участников социальной программы «Лента» в Гипер Ленте в часы работы магазина. Скидки суммируются .Не забудьте предъявить на кассе социальную карту."
+            },
+            "title": "Доп.скидка 10%",
+            "tooltip": {
+              "description": ""
+            },
+            "web_link": "https://lenta.com/action/detail/1308/"
+          },
+          {
+            "backgroundColor": "#6a718a",
+            "deeplink": "lentaapp://discoveryclub",
+            "id": 482,
+            "modal": {
+              "button_title": "Перейти",
+              "text": "Вступайте в «Ленту Открытий» и получайте баллы за отзывы."
+            },
+            "title": "Баллы за отзыв",
+            "tooltip": {
+              "description": ""
+            },
+            "web_link": "https://lenta.com/l/lentaonly/"
+          }
+        ]
+      },
+      "chipsPrices": [],
+      "count": 100,
+      "dimensions": {
+        "height": 225,
+        "length": 130,
+        "width": 97
+      },
+      "display": {
+        "name": "Мука пшеничная ЛЕНТА высший сорт",
+        "package": "2 кг"
+      },
+      "features": {
+        "isAdult": false,
+        "isAlcohol": false,
+        "isBlockedForSale": false,
+        "isFavorite": false,
+        "isFd": false,
+        "isIndividualAcc": false,
+        "isMarkType": false,
+        "isMercurial": false,
+        "isOnlyPickup": false,
+        "isPartner": false,
+        "isPersonalPrice": false,
+        "isPinned": false,
+        "isPromo": false,
+        "isPurchased": false,
+        "isQuantityDiscount": false,
+        "isReviewable": false,
+        "isSizeChartVisible": false,
+        "isTobacco": false,
+        "isWeight": false,
+        "markType": ""
+      },
+      "id": 49705,
+      "images": [
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/49705/e8ab5c79-f65f-4dd9-9faa-579d829168fa.png",
+          "id": 49705,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/49705/e8ab5c79-f65f-4dd9-9faa-579d829168fa.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/49705/e8ab5c79-f65f-4dd9-9faa-579d829168fa.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/49705/e8ab5c79-f65f-4dd9-9faa-579d829168fa.png",
+          "position": 1,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/49705/e8ab5c79-f65f-4dd9-9faa-579d829168fa.png"
+        },
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/49705/a6447d81-f397-4619-88fb-0073d9eef304.png",
+          "id": 49705,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/49705/a6447d81-f397-4619-88fb-0073d9eef304.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/49705/a6447d81-f397-4619-88fb-0073d9eef304.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/49705/a6447d81-f397-4619-88fb-0073d9eef304.png",
+          "position": 2,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/49705/a6447d81-f397-4619-88fb-0073d9eef304.png"
+        },
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/49705/a7f33c9e-4335-49c9-aef6-a2cffb922090.png",
+          "id": 49705,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/49705/a7f33c9e-4335-49c9-aef6-a2cffb922090.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/49705/a7f33c9e-4335-49c9-aef6-a2cffb922090.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/49705/a7f33c9e-4335-49c9-aef6-a2cffb922090.png",
+          "position": 3,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/49705/a7f33c9e-4335-49c9-aef6-a2cffb922090.png"
+        }
+      ],
+      "name": "Мука пшеничная ЛЕНТА высший сорт, 2кг",
+      "personalization": {
+        "modelType": "",
+        "ruleId": ""
+      },
+      "prices": {
+        "cost": 8499,
+        "costRegular": 10526,
+        "isLoyaltyCardPrice": true,
+        "isPromoactionPrice": true,
+        "isQuantPrice": false,
+        "price": 8499,
+        "priceRegular": 10526
+      },
+      "quantityDiscount": [],
+      "quantityDiscountPromo": [],
+      "rating": {
+        "rate": 4.9,
+        "votes": 11438
+      },
+      "saleLimit": {
+        "foldQuantity": 1,
+        "maxSaleQuantity": 100,
+        "minSaleQuantity": 1
+      },
+      "slug": "muka-pshenichnaya-vs-rossiya-2kg",
+      "storeId": 267,
+      "units": {
+        "itemUnit": "шт",
+        "itemUnitQuantity": 1,
+        "saleUnit": "шт",
+        "saleUnitQuantity": 1
+      },
+      "videos": [],
+      "weight": {
+        "gross": 2000,
+        "net": 0,
+        "package": "2кг"
+      }
+    },
+    {
+      "badges": {
+        "discount": [
+          {
+            "backgroundColor": "#ef4544",
+            "title": "-16%",
+            "tooltip": {
+              "description": ""
+            }
+          }
+        ],
+        "image": []
+      },
+      "chipsPrices": [],
+      "count": 100,
+      "dimensions": {
+        "height": 210,
+        "length": 102,
+        "width": 130
+      },
+      "display": {
+        "name": "Мука пшеничная ПРЕДПОРТОВАЯ хлебопекарная высший сорт",
+        "package": "2 кг"
+      },
+      "features": {
+        "isAdult": false,
+        "isAlcohol": false,
+        "isBlockedForSale": false,
+        "isFavorite": false,
+        "isFd": false,
+        "isIndividualAcc": false,
+        "isMarkType": false,
+        "isMercurial": false,
+        "isOnlyPickup": false,
+        "isPartner": false,
+        "isPersonalPrice": false,
+        "isPinned": false,
+        "isPromo": false,
+        "isPurchased": false,
+        "isQuantityDiscount": false,
+        "isReviewable": false,
+        "isSizeChartVisible": false,
+        "isTobacco": false,
+        "isWeight": false,
+        "markType": ""
+      },
+      "id": 58021,
+      "images": [
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/58021/b76b6778-d642-4f38-9172-9c2286a92f29.png",
+          "id": 58021,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/58021/b76b6778-d642-4f38-9172-9c2286a92f29.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/58021/b76b6778-d642-4f38-9172-9c2286a92f29.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/58021/b76b6778-d642-4f38-9172-9c2286a92f29.png",
+          "position": 1,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/58021/b76b6778-d642-4f38-9172-9c2286a92f29.png"
+        },
+        {
+          "icon": "https://cdn.api.lenta.com/resample/webp/100x100/photo/58021/087598f2-f0dd-4732-9a16-b94e3637539f.png",
+          "id": 58021,
+          "large": "https://cdn.api.lenta.com/resample/webp/900x900/photo/58021/087598f2-f0dd-4732-9a16-b94e3637539f.png",
+          "medium": "https://cdn.api.lenta.com/resample/webp/500x500/photo/58021/087598f2-f0dd-4732-9a16-b94e3637539f.png",
+          "original": "https://cdn.api.lenta.com/resample/webp/0x0/photo/58021/087598f2-f0dd-4732-9a16-b94e3637539f.png",
+          "position": 2,
+          "preview": "https://cdn.api.lenta.com/resample/webp/250x250/photo/58021/087598f2-f0dd-4732-9a16-b94e3637539f.png"
+        }
+      ],
+      "name": "Мука пшеничная ПРЕДПОРТОВАЯ хлебопекарная высший сорт, 2кг",
+      "personalization": {
+        "modelType": "",
+        "ruleId": ""
+      },
+      "prices": {
+        "cost": 12499,
+        "costRegular": 14999,
+        "isLoyaltyCardPrice": true,
+        "isPromoactionPrice": true,
+        "isQuantPrice": false,
+        "price": 12499,
+        "priceRegular": 14999
+      },
+      "quantityDiscount": [],
+      "quantityDiscountPromo": [],
+      "rating": {
+        "rate": 5,
+        "votes": 666
+      },
+      "saleLimit": {
+        "foldQuantity": 1,
+        "maxSaleQuantity": 100,
+        "minSaleQuantity": 1
+      },
+      "slug": "muka-pshenichnaya-hp-vs-rossiya-2kg",
+      "storeId": 267,
+      "units": {
+        "itemUnit": "шт",
+        "itemUnitQuantity": 1,
+        "saleUnit": "шт",
+        "saleUnitQuantity": 1
+      },
+      "videos": [],
+      "weight": {
+        "gross": 2015,
+        "net": 0,
+        "package": "2кг"
+      }
+    }
+  ],
+  "total": 60
+}

@@ -1,0 +1,7 @@
+[
+  {"name": "Продукты", "nodeCode": "a1b2c3", "children": [
+    {"name": "Молоко", "nodeCode": "d4e5f6", "children": []},
+    {"name": "Хлеб", "nodeCode": "g7h8i9", "children": []}
+  ]},
+  {"name": "Напитки", "nodeCode": "j0k1l2", "children": []}
+]
